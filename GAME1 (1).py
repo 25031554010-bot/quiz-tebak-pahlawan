@@ -3,7 +3,8 @@ import tkinter as tk
 from PIL import ImageTk, Image
 from tkinter.messagebox import showinfo
 
-# Ini adalah Push Pertama
+# Ini adalah Push Pertama 
+# Ini adalah Push Kedua 
 
 class Start:
     def __init__(self, root):
