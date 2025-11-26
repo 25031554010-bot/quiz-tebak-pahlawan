@@ -1,0 +1,57 @@
+[
+    {
+        "question": "\"Arek Arek Suroboyo!\" \"Merdeka atau mati!\" Siapakah nama pahlawan yang mengatakan kalimat itu pada pidatonya?",
+        "options": ["A. Ki Hajar Dewantara", "B. Soekarno", "C. Mohammad Hatta", "D. Bung Tomo"],
+        "answer": 3
+    },
+    {
+        "question": "Siapakah proklamator kemerdekaan Indonesia?",
+        "options": ["A. Muhammad Yamin dan Hatta", "B. Soekarno dan Moh. Hatta", "C. Ki Hajar Dewantara dan Soekarno", "D. Diponegoro dan Soedirman"],
+        "answer": 1
+    },
+    {
+        "question": "Siapakah tokoh yang dikenal sebagai \"Bapak Pendidikan Nasional\"?",
+        "options": ["A. Ki Hajar Dewantara", "B. Soekarno", "C. Mohammad Hatta", "D. Sutan Sjahrir"],
+        "answer": 0
+    },
+    {
+        "question": "Pahlawan yang memperjuangkan hak-hak perempuan melalui tulisan-tulisannya adalah...",
+        "options": ["A. Dewi Sartika", "B. R.A. Kartini", "C. Martha Christina Tiahahu", "D. Cut Nyak Meutia"],
+        "answer": 1
+    },
+    {
+        "question": "\"Kapiten Pattimura\" adalah julukan bagi pahlawan dari daerah…?",
+        "options": ["A. Bali", "B. Sulawesi", "C. Maluku", "D. Kalimantan"],
+        "answer": 2
+    },
+    {
+        "question": "Gambar apakah ini dan dimana letaknya?",
+        "image": "monumen_tugu_pahlawan.jpg",
+        "options": ["A. Monumen Bandung Lautan Api, Bandung", "B. Tugu Pahlawan, Surabaya", "C. Jalesveva Jayamahe, Surabaya", "D. Monumen Pahlawan, Maluku"],
+        "answer": 1
+    },
+    {
+        "question": "Siapakah nama Pahlawan pada Gambar?",
+        "image": "ra_kartini_pahlawan.jpg",
+        "options": ["A. R.A. Kartini", "B. Cut Nyak Dien", "C. Martha Christina Tiahahu", "D. Dewi Sartika"],
+        "answer": 0
+    },
+    {
+        "question": "Wajah siapa yang ada pada uang 5.000 rupiah?",
+        "image": "imam_bonjol_pahlawan.jpg",
+        "options": ["A. Pangeran Diponegoro", "B. Hasanuddin", "C. Soekarno dan Mohammad Hatta", "D. Tuanku Imam Bonjol"],
+        "answer": 3
+    },
+    {
+        "question": "Siapakah nama Pahlawan pada Gambar?",
+        "image": "ki_hajar_dewantara_pahlawan.jpg",
+        "options": ["A. Pangeran Diponegoro", "B. Kapitan Pattimura", "C. Sultan Hasanuddin", "D. Ki Hajar Dewantara"],
+        "answer": 3
+    },
+    {
+        "question": "Peristiwa apakah yang disajikan gambar?",
+        "image": "pertempuran_surabaya.jpg",
+        "options": ["A. Pertempuran Surabaya (10 November 1945)", "B. Pertempuran Ambarawa", "C. Bandung Lautan Api", "D. Pertempuran Medan Area"],
+        "answer": 0
+    }
+]
