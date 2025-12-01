@@ -138,7 +138,7 @@ class HeroQuizApp:
     # ===========================
     def show_question(self):
         self.clear()
-        self.bg_image = Image.open("background_kuis_pahlawan_dan_hasil.jpg")
+        self.bg_image = Image.open("bg_kuis.jpg")
         self.place_background()
 
         q = questions[self.q_index]
