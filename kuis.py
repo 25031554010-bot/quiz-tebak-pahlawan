@@ -195,7 +195,7 @@ class HeroQuizApp:
     # ===========================
     def show_result(self):
         self.clear()
-        self.bg_image = Image.open("background_kuis_pahlawan_dan_hasil.jpg")
+        self.bg_image = Image.open("bg_kuis.jpg")
         self.place_background()
 
         frame = tk.Frame(self.root, bg="#ff623b")
