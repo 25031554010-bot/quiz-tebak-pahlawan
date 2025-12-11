@@ -25,6 +25,56 @@
         "answer": 2
     },
     {
+        "question": "Perang Padri terjadi di wilayah…",
+        "options": ["A. Aceh", "B. Minangkabau", "C. Banten", "D. Kalimantan"],
+        "answer": 1
+    },
+    {
+        "question": "Pahlawan yang dikenal sebagai \"Ayam Jantan dari Timur\" adalah…",
+        "options": ["A. Sultan Hasanuddin", "B. Pattimura", "C. Cut Nyak Meutia", "D. Pangeran Antasari"],
+        "answer": 0
+    },
+    {
+        "question": "Siapakah pencipta lagu kebangsaan \"Indonesia Raya\"?",
+        "options": ["A. H. Mutahar", "B. Ibu Sud", "C. Cornel Simanjuntak", "D. Wage Rudolf Supratman"],
+        "answer": 3
+    },
+    {
+        "question": "Pahlawan yang mengusulkan dasar negara Pancasila pertama kali adalah…",
+        "options": ["A. Mohammad Yamin", "B. Moh. Hatta", "C. Soekarno", "D. Sutan Sjahrir"],
+        "answer": 2
+    },
+    {
+        "question": "Siapakah Nama Pahlawan yang termasuk dalam 3 serangkai?",
+        "options": ["A. Douwes Dekker", "B. Soekarno", "C. Moh. Yamin", "D. Moh. Hatta"],
+        "answer": 0
+    },
+    {
+        "question": "Siapakah Nama Pahlawan yang termasuk dalam 3 serangkai?",
+        "options": ["A. Soekarno", "B. Ki Hajar Dewantara", "C. Moh. Hatta", "D. Soepomo"],
+        "answer": 1
+    },
+    {
+        "question": "Siapakah pencetus semboyan \"Ing Ngarso Sung Tulodo\"?",
+        "options": ["A. Fatmawati", "B. Kartini", "C. Soekarno", "D. Ki Hajar Dewantara"],
+        "answer": 3
+    },
+    {
+        "question": "Pahlawan nasional yang gugur dalam Peristiwa Bandung Lautan Api adalah…",
+        "options": ["A. Ahmad Yani", "B. Jendral Soedirman", "C. Moh. Toha", "D. Soekarno"],
+        "answer": 2
+    },
+    {
+        "question": "Pemimpin pertempuran 10 November di Surabaya adalah…",
+        "options": ["A. A.H. Nasution", "B. Bung Tomo", "C. Sudirman", "D. Oerip"],
+        "answer": 1
+    },
+    {
+        "question": "Siapakah Nama Pahlawan Wanita yang melawan penjajah Belanda dari Aceh?",
+        "options": ["A. Kartini", "B. Malahayati", "C. Cut Meutia", "D. Rohana Kudus"],
+        "answer": 2
+    },
+    {
         "question": "Gambar apakah ini dan dimana letaknya?",
         "image": "monumen_tugu_pahlawan.jpg",
         "options": ["A. Monumen Bandung Lautan Api, Bandung", "B. Tugu Pahlawan, Surabaya", "C. Jalesveva Jayamahe, Surabaya", "D. Monumen Pahlawan, Maluku"],
