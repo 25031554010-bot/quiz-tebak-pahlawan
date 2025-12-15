@@ -92,7 +92,7 @@ class HeroQuizApp:
 
         self.manage_window = self.canvas.create_window(
             self.canvas.winfo_width() // 2,
-            int(self.canvas.winfo_height() * 0.85),
+            int(self.canvas.winfo_height() * 75.0),
             window=self.manage_btn
         )
 
@@ -109,10 +109,10 @@ class HeroQuizApp:
         self.canvas.itemconfig(self.bg_canvas, image=self.bg_photo)
 
         if hasattr(self, "btn_window"):
-            self.canvas.coords(self.btn_window, w // 2, int(h * 0.7))
+            self.canvas.coords(self.btn_window, w // 2, int(h * 0.67))
 
         if hasattr(self, "manage_window"):
-            self.canvas.coords(self.manage_window, w // 2, int(h * 0.85))
+            self.canvas.coords(self.manage_window, w // 2, int(h * 0.74))
 
     # ===========================
     # KELOLA SOAL (TAMBAH & HAPUS)
@@ -124,7 +124,7 @@ class HeroQuizApp:
 
         data = load_questions_from_file("questions.txt")
 
-        listbox = tk.Listbox(win, width=100)
+        listbox = tk.Listbox(win, width=150,height=20)
         listbox.pack(pady=10)
 
         def refresh():
@@ -196,26 +196,57 @@ class HeroQuizApp:
         self.clear()
         self.bg_image = Image.open("bg_kuis.jpg")
         self.place_background()
-        #background dulu
 
         q = self.quiz_questions[self.q_index]
 
-        frame = tk.Frame(self.root, bg="#ff623b") #ciptakan frame
+        frame = tk.Frame(self.root, bg="#ff623b")
         frame.place(relx=0.5, rely=0.5, anchor="center", width=600, height=500)
 
+    # Tampilkan teks pertanyaan
         tk.Label(
             frame,
             text=f"Pertanyaan {self.q_index + 1}\n\n{q['question']}",
             bg="white", font=("Arial", 18, "bold"),
             wraplength=550
-        ).pack(pady=20)
+            ).pack(pady=10)
 
+    # Jika ada gambar, tampilkan
+        if "image" in q and q["image"]:
+            try:
+                img = Image.open(q["image"])
+                img_small = img.resize((200, 100), Image.LANCZOS)
+                self.q_photo = ImageTk.PhotoImage(img_small)
+            
+                img_label = tk.Label(frame, image=self.q_photo, bg="white", cursor="hand2")
+                img_label.pack(pady=10)
+
+            # Fungsi klik untuk memperbesar
+                def show_large(event):
+                    top = tk.Toplevel(self.root)
+                    top.title("Gambar Besar")
+                
+                # Bisa disesuaikan dengan ukuran asli atau fixed
+                    img_large = img.resize((800, 400), Image.LANCZOS)
+                    photo_large = ImageTk.PhotoImage(img_large)
+                
+                # Simpan di atribut supaya tidak hilang
+                    top.large_photo = photo_large
+                
+                    tk.Label(top, image=photo_large).pack()
+            
+                img_label.bind("<Button-1>", show_large)
+            except Exception as e:
+             print(f"Gagal memuat gambar {q['image']}: {e}")
+
+    # Tombol jawaban
         for i, opt in enumerate(q["options"]):
             tk.Button(
                 frame, text=opt,
                 font=("Arial", 14), width=40,
                 command=lambda i=i: self.check_answer(i)
-            ).pack(pady=6)
+                ).pack(pady=6)
+
+
 
     def check_answer(self, selected):
         if selected == self.quiz_questions[self.q_index]["answer"]:
@@ -245,8 +276,13 @@ class HeroQuizApp:
         tk.Label(frame, text=f"Skor: {self.score}",
                  font=("Arial", 20)).pack(pady=10)
 
-        tk.Button(frame, text="Home",
-                  command=self.create_home).pack(pady=10)
+        tk.Button(frame, text="Home",width=15,
+              bg="#fbff0f", fg="black", font=("Arial", 14, "bold"), command=self.create_home).pack(pady=10)
+        
+        tk.Button(frame, text="Exit",
+              command=self.root.destroy, width=15,
+              bg="#f44336", fg="white", font=("Arial", 14, "bold")
+              ).pack(pady=10)
 
     def clear(self):
         for widget in self.root.winfo_children(): #mengembalikan sebuah list yang berisi semua objek widget yang merupakan anak langsung dari widget yang dipanggil

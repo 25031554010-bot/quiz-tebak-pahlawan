@@ -183,25 +183,5 @@
             "D. Pertempuran Medan Area"
         ],
         "answer": 0
-    },
-    {
-        "question": "Tulis pertanyaan",
-        "options": [
-            "Opsi 0",
-            "Opsi 1",
-            "Opsi 2",
-            "Opsi 3"
-        ],
-        "answer": 0
-    },
-    {
-        "question": "siapakah bapak magal",
-        "options": [
-            "pak",
-            "pakaka",
-            "kh hajar",
-            "adit"
-        ],
-        "answer": 3
     }
 ]
