@@ -1,107 +1,207 @@
 [
     {
         "question": "\"Arek Arek Suroboyo!\" \"Merdeka atau mati!\" Siapakah nama pahlawan yang mengatakan kalimat itu pada pidatonya?",
-        "options": ["A. Ki Hajar Dewantara", "B. Soekarno", "C. Mohammad Hatta", "D. Bung Tomo"],
+        "options": [
+            "A. Ki Hajar Dewantara",
+            "B. Soekarno",
+            "C. Mohammad Hatta",
+            "D. Bung Tomo"
+        ],
         "answer": 3
     },
     {
         "question": "Siapakah proklamator kemerdekaan Indonesia?",
-        "options": ["A. Muhammad Yamin dan Hatta", "B. Soekarno dan Moh. Hatta", "C. Ki Hajar Dewantara dan Soekarno", "D. Diponegoro dan Soedirman"],
+        "options": [
+            "A. Muhammad Yamin dan Hatta",
+            "B. Soekarno dan Moh. Hatta",
+            "C. Ki Hajar Dewantara dan Soekarno",
+            "D. Diponegoro dan Soedirman"
+        ],
         "answer": 1
     },
     {
         "question": "Siapakah tokoh yang dikenal sebagai \"Bapak Pendidikan Nasional\"?",
-        "options": ["A. Ki Hajar Dewantara", "B. Soekarno", "C. Mohammad Hatta", "D. Sutan Sjahrir"],
+        "options": [
+            "A. Ki Hajar Dewantara",
+            "B. Soekarno",
+            "C. Mohammad Hatta",
+            "D. Sutan Sjahrir"
+        ],
         "answer": 0
     },
     {
         "question": "Pahlawan yang memperjuangkan hak-hak perempuan melalui tulisan-tulisannya adalah...",
-        "options": ["A. Dewi Sartika", "B. R.A. Kartini", "C. Martha Christina Tiahahu", "D. Cut Nyak Meutia"],
+        "options": [
+            "A. Dewi Sartika",
+            "B. R.A. Kartini",
+            "C. Martha Christina Tiahahu",
+            "D. Cut Nyak Meutia"
+        ],
         "answer": 1
     },
     {
         "question": "\"Kapiten Pattimura\" adalah julukan bagi pahlawan dari daerah…?",
-        "options": ["A. Bali", "B. Sulawesi", "C. Maluku", "D. Kalimantan"],
+        "options": [
+            "A. Bali",
+            "B. Sulawesi",
+            "C. Maluku",
+            "D. Kalimantan"
+        ],
         "answer": 2
     },
     {
         "question": "Perang Padri terjadi di wilayah…",
-        "options": ["A. Aceh", "B. Minangkabau", "C. Banten", "D. Kalimantan"],
+        "options": [
+            "A. Aceh",
+            "B. Minangkabau",
+            "C. Banten",
+            "D. Kalimantan"
+        ],
         "answer": 1
     },
     {
         "question": "Pahlawan yang dikenal sebagai \"Ayam Jantan dari Timur\" adalah…",
-        "options": ["A. Sultan Hasanuddin", "B. Pattimura", "C. Cut Nyak Meutia", "D. Pangeran Antasari"],
+        "options": [
+            "A. Sultan Hasanuddin",
+            "B. Pattimura",
+            "C. Cut Nyak Meutia",
+            "D. Pangeran Antasari"
+        ],
         "answer": 0
     },
     {
-        "question": "Siapakah pencipta lagu kebangsaan \"Indonesia Raya\"?",
-        "options": ["A. H. Mutahar", "B. Ibu Sud", "C. Cornel Simanjuntak", "D. Wage Rudolf Supratman"],
-        "answer": 3
-    },
-    {
         "question": "Pahlawan yang mengusulkan dasar negara Pancasila pertama kali adalah…",
-        "options": ["A. Mohammad Yamin", "B. Moh. Hatta", "C. Soekarno", "D. Sutan Sjahrir"],
+        "options": [
+            "A. Mohammad Yamin",
+            "B. Moh. Hatta",
+            "C. Soekarno",
+            "D. Sutan Sjahrir"
+        ],
         "answer": 2
     },
     {
         "question": "Siapakah Nama Pahlawan yang termasuk dalam 3 serangkai?",
-        "options": ["A. Douwes Dekker", "B. Soekarno", "C. Moh. Yamin", "D. Moh. Hatta"],
-        "answer": 0
-    },
-    {
-        "question": "Siapakah Nama Pahlawan yang termasuk dalam 3 serangkai?",
-        "options": ["A. Soekarno", "B. Ki Hajar Dewantara", "C. Moh. Hatta", "D. Soepomo"],
+        "options": [
+            "A. Soekarno",
+            "B. Ki Hajar Dewantara",
+            "C. Moh. Hatta",
+            "D. Soepomo"
+        ],
         "answer": 1
     },
     {
         "question": "Siapakah pencetus semboyan \"Ing Ngarso Sung Tulodo\"?",
-        "options": ["A. Fatmawati", "B. Kartini", "C. Soekarno", "D. Ki Hajar Dewantara"],
+        "options": [
+            "A. Fatmawati",
+            "B. Kartini",
+            "C. Soekarno",
+            "D. Ki Hajar Dewantara"
+        ],
         "answer": 3
     },
     {
         "question": "Pahlawan nasional yang gugur dalam Peristiwa Bandung Lautan Api adalah…",
-        "options": ["A. Ahmad Yani", "B. Jendral Soedirman", "C. Moh. Toha", "D. Soekarno"],
+        "options": [
+            "A. Ahmad Yani",
+            "B. Jendral Soedirman",
+            "C. Moh. Toha",
+            "D. Soekarno"
+        ],
         "answer": 2
     },
     {
         "question": "Pemimpin pertempuran 10 November di Surabaya adalah…",
-        "options": ["A. A.H. Nasution", "B. Bung Tomo", "C. Sudirman", "D. Oerip"],
+        "options": [
+            "A. A.H. Nasution",
+            "B. Bung Tomo",
+            "C. Sudirman",
+            "D. Oerip"
+        ],
         "answer": 1
     },
     {
         "question": "Siapakah Nama Pahlawan Wanita yang melawan penjajah Belanda dari Aceh?",
-        "options": ["A. Kartini", "B. Malahayati", "C. Cut Meutia", "D. Rohana Kudus"],
+        "options": [
+            "A. Kartini",
+            "B. Malahayati",
+            "C. Cut Meutia",
+            "D. Rohana Kudus"
+        ],
         "answer": 2
     },
     {
         "question": "Gambar apakah ini dan dimana letaknya?",
         "image": "monumen_tugu_pahlawan.jpg",
-        "options": ["A. Monumen Bandung  Lautan Api, Bandung", "B. Tugu Pahlawan, Surabaya", "C. Jalesveva Jayamahe, Surabaya", "D. Monumen Pahlawan, Maluku"],
+        "options": [
+            "A. Monumen Bandung Lautan Api, Bandung",
+            "B. Tugu Pahlawan, Surabaya",
+            "C. Jalesveva Jayamahe, Surabaya",
+            "D. Monumen Pahlawan, Maluku"
+        ],
         "answer": 1
     },
     {
         "question": "Siapakah nama Pahlawan pada Gambar?",
         "image": "ra_kartini_pahlawan.jpg",
-        "options": ["A. R.A. Kartini", "B. Cut Nyak Dien", "C. Martha Christina Tiahahu", "D. Dewi Sartika"],
+        "options": [
+            "A. R.A. Kartini",
+            "B. Cut Nyak Dien",
+            "C. Martha Christina Tiahahu",
+            "D. Dewi Sartika"
+        ],
         "answer": 0
     },
     {
         "question": "Wajah siapa yang ada pada uang 5.000 rupiah?",
         "image": "imam_bonjol_pahlawan.jpg",
-        "options": ["A. Pangeran Diponegoro", "B. Hasanuddin", "C. Soekarno dan Mohammad Hatta", "D. Tuanku Imam Bonjol"],
+        "options": [
+            "A. Pangeran Diponegoro",
+            "B. Hasanuddin",
+            "C. Soekarno dan Mohammad Hatta",
+            "D. Tuanku Imam Bonjol"
+        ],
         "answer": 3
     },
     {
         "question": "Siapakah nama Pahlawan pada Gambar?",
         "image": "ki_hajar_dewantara_pahlawan.jpg",
-        "options": ["A. Pangeran Diponegoro", "B. Kapitan Pattimura", "C. Sultan Hasanuddin", "D. Ki Hajar Dewantara"],
+        "options": [
+            "A. Pangeran Diponegoro",
+            "B. Kapitan Pattimura",
+            "C. Sultan Hasanuddin",
+            "D. Ki Hajar Dewantara"
+        ],
         "answer": 3
     },
     {
         "question": "Peristiwa apakah yang disajikan gambar?",
         "image": "pertempuran_surabaya.jpg",
-        "options": ["A. Pertempuran Surabaya (10 November 1945)", "B. Pertempuran Ambarawa", "C. Bandung Lautan Api", "D. Pertempuran Medan Area"],
+        "options": [
+            "A. Pertempuran Surabaya (10 November 1945)",
+            "B. Pertempuran Ambarawa",
+            "C. Bandung Lautan Api",
+            "D. Pertempuran Medan Area"
+        ],
         "answer": 0
+    },
+    {
+        "question": "Tulis pertanyaan",
+        "options": [
+            "Opsi 0",
+            "Opsi 1",
+            "Opsi 2",
+            "Opsi 3"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "siapakah bapak magal",
+        "options": [
+            "pak",
+            "pakaka",
+            "kh hajar",
+            "adit"
+        ],
+        "answer": 3
     }
 ]
