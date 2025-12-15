@@ -77,7 +77,7 @@
     {
         "question": "Gambar apakah ini dan dimana letaknya?",
         "image": "monumen_tugu_pahlawan.jpg",
-        "options": ["A. Monumen Bandung Lautan Api, Bandung", "B. Tugu Pahlawan, Surabaya", "C. Jalesveva Jayamahe, Surabaya", "D. Monumen Pahlawan, Maluku"],
+        "options": ["A. Monumen Bandung  Lautan Api, Bandung", "B. Tugu Pahlawan, Surabaya", "C. Jalesveva Jayamahe, Surabaya", "D. Monumen Pahlawan, Maluku"],
         "answer": 1
     },
     {

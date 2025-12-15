@@ -1,3 +1,4 @@
+# didalam class paling bagus kalau isinya pemanggilan fungsi
 import tkinter as tk
 import random
 import json
@@ -13,6 +14,14 @@ def load_questions_from_file(filename):
     return data
 
 questions = load_questions_from_file("questions.txt")
+
+#sebuah fungsi untuk membuka file txt dengan anchor filename, 
+# Dengan menambahkan encoding="utf-8", kamu memastikan
+# Teks Aman: Huruf asing dan emoji tetap terbaca dengan benar.
+# Kompatibel: File kamu bisa dibuka dengan aman di Windows, Mac, Linux, maupun HP.
+
+# json.load membaca data dari sebuah file dan menguraikannya (parsing) menjadi struktur 
+# data yang bisa digunakan Python (seperti kamus/dictionary atau list).
 
 # ===========================
 # GUI QUIZ
@@ -33,25 +42,27 @@ class HeroQuizApp:
     def place_background(self):
         """Menambahkan canvas + background image ke halaman apapun"""
         self.bg_photo = ImageTk.PhotoImage(self.bg_image)
-        self.canvas = tk.Canvas(self.root, highlightthickness=0)
-        self.canvas.pack(fill="both", expand=True)
+        self.canvas = tk.Canvas(self.root, highlightthickness=0)  #Pembuatan Kanvas: Membuat widget Kanvas baru. Kanvas adalah area tempat kita bisa menggambar bentuk, teks, dan, yang paling penting di sini, gambar. self.root adalah jendela utama aplikasi. highlightthickness=0 menghilangkan bingkai (border) default kanvas.
+        self.canvas.pack(fill="both", expand=True) 
         self.bg_canvas = self.canvas.create_image(0, 0, image=self.bg_photo, anchor="nw")
-
+#untuk memanggil gambar sbg background diperlukan fungsi yang isinya ImageTk dan tk.canvas
 
     # ===========================
     # HALAMAN HOME
     # ===========================
     def create_home(self):
         self.clear()
+        #pertama
 
         # ===========================
         # LOAD BACKGROUND GAMBAR
         # ===========================
         self.bg_image = Image.open("background_kuis_pahlawan.jpg")   # <-- GANTI NAMA FILE DI SINI
-        self.original_bg = self.bg_image.copy()
+        self.original_bg = self.bg_image.copy() #gak ngefek hanya kalau mau ambil gambar yang original
         self.bg_photo = ImageTk.PhotoImage(self.bg_image)
 
         self.place_background()
+        #kedua
         
         # ===========================
         # TOMBOL MULAI DI TENGAH BANNER
@@ -60,6 +71,12 @@ class HeroQuizApp:
                                 font=("Arial", 20, "bold"),
                                 bg="#ff623b", fg="white",
                                 width=10, command=self.start_quiz)
+        
+        # self.start_btn1 = tk.Button(self.root, text="Mulai",
+        #                         font=("Arial", 20, "bold"),
+        #                         bg="#ff623b", fg="white",
+        #                         width=10, )
+        #buat fungsi button dulu
 
         # letakkan tombol di tengah window (nanti direposisi otomatis pas resize)
         self.btn_window = self.canvas.create_window(
@@ -67,9 +84,16 @@ class HeroQuizApp:
             self.canvas.winfo_height() // 2,
             window=self.start_btn
         )
+        # self.btn_window1 = self.canvas.create_window(
+        #     self.canvas.winfo_width() // 2,
+        #     self.canvas.winfo_height() // 2,
+        #     window=self.start_btn1
+        # )
+        #button diletakkan pada canvas
+        #PENTING .winfo itu untuk mengambil data tampilan dan geometri widget di layar.
 
     def resize_background(self, event):
-        # Jika canvas tidak ada (halaman sudah berpindah), hentikan
+        # Jika canvas tidak ada (halaman sudah berpindah), hentikan mengatasi error
         if not hasattr(self, "canvas") or not self.canvas.winfo_exists():
             return
 
@@ -142,21 +166,22 @@ class HeroQuizApp:
         self.clear()
         self.bg_image = Image.open("bg_kuis.jpg")
         self.place_background()
+        #background dulu
 
         q = self.quiz_questions[self.q_index]
 
-        frame = tk.Frame(self.root, bg="#ff623b")
+        frame = tk.Frame(self.root, bg="#ff623b") #ciptakan frame
         frame.place(relx=0.5, rely=0.5, anchor="center", width=600, height=500)
         
         # ---------------------------
         # TAMPILKAN GAMBAR JIKA ADA
         # ---------------------------
         if "image" in q:
-            img = Image.open(q["image"])
+            img = Image.open(q["image"]) #untuk membuka value dari image
             img = img.resize((150, 100))
-            self.q_photo = ImageTk.PhotoImage(img)
+            self.q_photo = ImageTk.PhotoImage(img) #diubah jadi imagetk
 
-            img_label = tk.Label(frame, image=self.q_photo, bg="white", cursor="hand2")
+            img_label = tk.Label(frame, image=self.q_photo, bg="white", cursor="hand2") #menempatkan dengan label
             img_label.pack(pady=10)
 
             # Klik gambar untuk zoom
@@ -164,20 +189,20 @@ class HeroQuizApp:
 
         q_label = tk.Label(frame, text=f"Pertanyaan {self.q_index + 1}/{len(self.quiz_questions)}\n\n{q['question']}",
                            bg="white", fg="black",
-                           font=("Arial", 18, "bold"), wraplength=600)
+                           font=("Arial", 18, "bold"), wraplength=600) #menciptakan label diatas dan juga text soal
         q_label.pack(pady=20)
 
         for i, opt in enumerate(q["options"]):
             btn = tk.Button(frame, text=opt, bg="white", fg="black",
                             font=("Arial", 14), width=40,
-                            command=lambda i=i: self.check_answer(i))
+                            command=lambda i=i: self.check_answer(i)) # ciptakan tombol jawaban sesuai value dari option, isi text dari opt, dan command untuk check answer
             btn.pack(pady=8)
 
     # ===========================
     # CEK JAWABAN
     # ===========================
     def check_answer(self, selected):
-        correct = self.quiz_questions[self.q_index]["answer"]
+        correct = self.quiz_questions[self.q_index]["answer"] #variabel mengakses jawaban dari question
 
         if selected == correct:
             self.score += 1
@@ -191,6 +216,7 @@ class HeroQuizApp:
             self.show_question()
         else:
             self.show_result()
+            #jika index kurang dari panjang question txt kembali jalankan fungsi show question, jika tidak masuk ke menu hasil
 
     # ===========================
     # HASIL
@@ -232,8 +258,8 @@ class HeroQuizApp:
     # HAPUS TAMPILAN DARI WINDOW
     # ===========================
     def clear(self):
-        for widget in self.root.winfo_children():
-            widget.destroy()
+        for widget in self.root.winfo_children(): #mengembalikan sebuah list yang berisi semua objek widget yang merupakan anak langsung dari widget yang dipanggil
+            widget.destroy() 
 
 # JALANKAN APLIKASI
 # ===========================
